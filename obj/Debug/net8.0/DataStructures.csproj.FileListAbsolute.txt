@@ -1,0 +1,14 @@
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.AssemblyInfoInputs.cache
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.AssemblyInfo.cs
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\bin\Debug\net8.0\DataStructures.exe
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\bin\Debug\net8.0\DataStructures.deps.json
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\bin\Debug\net8.0\DataStructures.runtimeconfig.json
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\bin\Debug\net8.0\DataStructures.dll
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\bin\Debug\net8.0\DataStructures.pdb
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.dll
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\refint\DataStructures.dll
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.pdb
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\DataStructures.genruntimeconfig.cache
+C:\Users\donyb\Desktop\Handasat Tochna\DataStructures\obj\Debug\net8.0\ref\DataStructures.dll
