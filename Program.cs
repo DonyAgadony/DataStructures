@@ -1,10 +1,13 @@
-﻿namespace AniHamelech;
+﻿// למי שבאה לפתוח את המחשב כדי להתחיל לעבוד ורואה את הדבר הזה, הכל בסדר זה מסובך בהצלחה עם זה
+
+//אוהב ומעריך דניאל פרץ
+
+namespace AniHamelech;
 class Program
 {
     public static void Main()
     {
         MyStack<int> Stack = new();
-
         Stack.Push(20);
         Stack.Push(40);
         Stack.Push(60);
