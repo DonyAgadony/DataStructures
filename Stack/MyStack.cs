@@ -31,7 +31,6 @@ public class MyStack<T>
     {
         T v1 = items[0];
         T v2 = items[1];
-
         items = items.Skip(2).ToArray();
         items = [v2, v1, .. items];
     }
