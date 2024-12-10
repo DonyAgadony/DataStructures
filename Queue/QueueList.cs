@@ -9,7 +9,7 @@ class QueueList<T>
 
     }
 
-    public void Enqueue(T value)
+    public void Enqueue(T value) //O(1)
     {
         if (FirstNode == null)
         {
@@ -24,19 +24,19 @@ class QueueList<T>
         }
     }
 
-    public T Dequeue()
+    public T Dequeue() //O(1)
     {
         T rtn = FirstNode.GetValue();
         FirstNode = FirstNode.GetNext();
         return rtn;
     }
 
-    public T Peek()
+    public T Peek() //O(1)
     {
         return FirstNode.GetValue();
     }
 
-    public int GetSize()
+    public int GetSize() //O(n) (n - size)
     {
         int count = 0;
         while (FirstNode.HasNext())
@@ -47,12 +47,12 @@ class QueueList<T>
         return count;
     }
 
-    public bool IsEmpty()
+    public bool IsEmpty() //O(1)
     {
         return FirstNode == null;
     }
 
-    public bool Contains(T value)
+    public bool Contains(T value) //O(n)
     {
         while (FirstNode.HasNext())
         {
@@ -62,7 +62,7 @@ class QueueList<T>
         return true;
     }
 
-    public QueueList<T> Reverse()
+    public QueueList<T> Reverse() //O(n) (n=size)
     {
         StackList<T> stack = new();
         int size = GetSize();

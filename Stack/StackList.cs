@@ -7,7 +7,7 @@ class StackList<T>
 
     }
 
-    public void Push(T value)
+    public void Push(T value) //O(1)
     {
         if (LastNode == null)
         {
@@ -20,19 +20,19 @@ class StackList<T>
             LastNode = node;
         }
     }
-    public T Pop()
+    public T Pop() //O(1)
     {
         T rst = LastNode.GetValue();
         LastNode = LastNode.GetNext();
         return rst;
     }
 
-    public T Peek()
+    public T Peek() //O(1)
     {
         return LastNode.GetValue();
     }
 
-    public int GetSize()
+    public int GetSize() //O(n)
     {
         int count = 0;
         while (LastNode.HasNext())
@@ -43,12 +43,12 @@ class StackList<T>
         return count;
     }
 
-    public bool IsEmpty()
+    public bool IsEmpty() //O(1)
     {
         return LastNode == null;
     }
 
-    public bool Contains(T value)
+    public bool Contains(T value) //O(n)
     {
         while (LastNode.HasNext())
         {
@@ -60,7 +60,7 @@ class StackList<T>
         return false;
     }
 
-    public StackList<T> Reverse()
+    public StackList<T> Reverse() //O(n)
     {
         StackList<T> stackList = new();
         while (LastNode.HasNext())

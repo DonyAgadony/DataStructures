@@ -15,6 +15,23 @@ class Program
         Stack.Pop();
         Stack.Pop();
         Console.WriteLine(Stack.Contains(0));
+        int n = 10;
+        int m = 8;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+
+            }
+        }
+
+        BinNode<int> root = new BinNode<int>(10);
+        root.SetLeft(new BinNode<int>(5));
+        root.SetRight(new BinNode<int>(15));
+        BinNode<int> temp = root.GetLeft();
+        temp.SetLeft(new BinNode<int>(3));
+        temp.SetRight(new BinNode<int>(7));
+        Console.WriteLine(TreeSum(root));
     }
     public static Node<int> Build()
     {
@@ -118,5 +135,67 @@ class Program
             head = head.GetNext()!;
         }
         return Max;
+    }
+
+    public static void PrintTree(BinNode<int> root)
+    {
+        if (root.GetLeft() != null)
+        {
+            PrintTree(root.GetLeft());
+        }
+        Console.WriteLine(root.GetValue());
+        if (root.GetRight() != null)
+        {
+            PrintTree(root.GetRight());
+        }
+    }
+    public static int GetSize(BinNode<int> root)
+    {
+        int count = 1;
+        if (root.GetLeft() != null)
+        {
+            count += GetSize(root.GetLeft());
+        }
+        if (root.GetRight() != null)
+        {
+            count += GetSize(root.GetRight());
+        }
+        return count;
+    }
+
+    public static int GetMaxValue(BinNode<int> root)
+    {
+        int max = root.GetValue();
+        if (root.GetLeft() != null)
+        {
+            int temp = GetMaxValue(root.GetLeft());
+            if (temp > max)
+            {
+                max = temp;
+            }
+        }
+        if (root.GetRight() != null)
+        {
+            int temp = GetMaxValue(root.GetRight());
+            if (temp > max)
+            {
+                max = temp;
+            }
+        }
+        return max;
+    }
+
+    public static int TreeSum(BinNode<int> root)
+    {
+        int sum = 0;
+        if (root.GetLeft() != null)
+        {
+            sum += TreeSum(root.GetLeft());
+        }
+        if (root.GetRight() != null)
+        {
+            sum += TreeSum(root.GetRight());
+        }
+        return sum;
     }
 }

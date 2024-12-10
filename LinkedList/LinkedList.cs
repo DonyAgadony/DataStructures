@@ -15,39 +15,39 @@ public class Node<T>
         this.next = next;
     }
 
-    public T GetValue()
+    public T GetValue() //O(1)
     {
         return value;
     }
 
-    public Node<T>? GetNext()
+    public Node<T>? GetNext() //O(1)
     {
         return next;
     }
 
-    public void SetValue(T value)
+    public void SetValue(T value) //O(1)
     {
         this.value = value;
     }
 
-    public void SetNext(Node<T> next)
+    public void SetNext(Node<T> next) //O(1)
     {
         this.next = next;
     }
 
-    public bool HasNext()
+    public bool HasNext() //O(1)
     {
         return next != null;
     }
 
-    public override string ToString()
+    public override string ToString() //O(1)
     {
         return value!.ToString()!;
     }
 }
 public static class ListOperations
 {
-    public static void AddToTail<T>(Node<T> head, T info)
+    public static void AddToTail<T>(Node<T> head, T info) //O(n) (n=size)
     {
         while (head.HasNext())
         {
@@ -56,7 +56,7 @@ public static class ListOperations
         head.SetNext(new Node<T>(info));
     }
 
-    public static string ToString<T>(Node<T> head)
+    public static string ToString<T>(Node<T> head) //O(n) (n=size)
     {
         string result = "";
         while (head != null)
@@ -67,7 +67,7 @@ public static class ListOperations
         return result;
 
     }
-    public static int GetLength<T>(Node<T> head)
+    public static int GetLength<T>(Node<T> head) //O(n) (n=size)
     {
         int len = 0;
 
@@ -79,7 +79,7 @@ public static class ListOperations
         return len;
     }
 
-    public static bool Contains<T>(Node<T> head, T value)
+    public static bool Contains<T>(Node<T> head, T value) //O(n) (n=size)
     {
         while (head != null)
         {
@@ -92,7 +92,7 @@ public static class ListOperations
         return false;
     }
 
-    public static int GetMax<T>(Node<int> head)
+    public static int GetMax<T>(Node<int> head) //O(n) (n=size)
     {
         int max = int.MinValue;
         while (head != null)
@@ -106,7 +106,7 @@ public static class ListOperations
         return max;
     }
 
-    public static void Insert<T>(Node<T> head, T value, int index)
+    public static void Insert<T>(Node<T> head, T value, int index) //O(n) (n=size)
     {
         for (; index > 1; index--)
         {
